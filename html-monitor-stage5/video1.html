@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>摄像头</title>
+	</head>
+
+	<body>
+
+		<body background="./images/huaqing002.jpg">
+			<table width="652" height="217" background="./images/安防监控.jpg" border="0" align="center">
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+			<tr>
+				<table width="652" height="35" background="" border="0" align="center">
+					<tr>
+						<td width="328">
+							<div align="center">摄像头</div>
+						</td>
+						<td width="314">
+							<div align="center">
+								<a href="home1.html">回主页</a>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<tr>
+					<table width="652" align="center" height="480" border="2">
+						<tr>
+							<td height="500"><img src="http://192.168.1.10:8080/?action=stream" /></td>
+						</tr>
+						<tr>
+							<td height="34">
+								<form id="form3" name="form3" method="post" action="cgi-bin/capture1.cgi"><input name="store" type="hidden" value="1" />
+									<table width="500" border="1" bgcolor="#CCFFFF" bordercolor="#5500FF">
+										<tr>
+											<td width="57">张数:</td>
+											<td width="195">
+												<p>
+													<label>
+              <input type="radio" name="mode" value="1" id="mode_0" />
+              1</label>
+
+													<label>
+              <input type="radio" name="mode" value="3" id="mode_1" />
+              3</label>
+
+													<label>
+              <input type="radio" name="mode" value="5" id="mode_2" />
+              5</label>
+
+													<label>
+              <input type="radio" name="mode" value="7" id="mode_3" />
+              7</label>
+
+													<label>
+              <input type="radio" name="mode" value="9" id="mode_4" />
+              9</label>
+													<br />
+												</p>
+											</td>
+											<td width="226">
+												<div align="center">
+													<input type="submit" name="button3" id="button3" value="抓拍" />&nbsp;&nbsp;&nbsp;
+													<a href="cgi-bin/picture1.cgi">历史照片</a>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</form>
+							</td>
+						</tr>
+					</table>
+
+		</body>
+
+</html>

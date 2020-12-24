@@ -1,0 +1,23 @@
+CC=gcc
+#CC=arm-none-linux-gnueabi-gcc
+AFLAGS=-g
+LDFLAGS= -L ./lib
+OBJS= capture.cgi \
+	  a9_beep.cgi a9_led.cgi a9_seg.cgi \
+	  zigbee_fan.cgi \
+	  env1.cgi setEnv.cgi
+
+run:$(OBJS)
+
+$(OBJS):%.cgi:%.c
+	$(CC) $(AFLAGS) $< cgic.c -o $@ $(LDFLAGS)
+	$(CC) $(AFLAGS) login.c -o login.cgi -static
+	mv *.cgi ./out/
+	
+install:
+	sudo cp  ./out/*.cgi  ~/source/rootfs/boa/cgi-bin
+
+.PHONY:clean
+clean:
+	rm ./out/*.cgi
+

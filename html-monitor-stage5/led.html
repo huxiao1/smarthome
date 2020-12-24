@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+	<title>web控制A9开发板led</title>
+	</head>
+	
+	<body background="./images/makeru-desktop.jpg">
+	<br/>
+	<embed src="./images/meiyanfang.mp3" autostart="true" loop="true" hidden="true"> 
+	<h1 align="center">基于Cortex-A9的web控制LED灯</h1>
+		<!--新建一个表单，动作链接到开发板的/cgi-bin/cgi_led.cgi，采用的方法为GET-->	
+		<form action="cgi-bin/cgi_led.cgi" method="get">  
+			<p align="center">Web端的led的控制测试</p>
+			<p align="center">请输入需要控制的led:<input type="text" name="led_control"/></p>
+			<p align="center">请输入LED控制命令  :<input type="text" name="led_state"/></p>
+			<h2 align="center"> (0熄灭-1点亮-2流水)</h2>   
+			<p align="center"><input type="submit" value="sure"/>        
+							  <input type="reset" value="back"/>
+			</p>
+		</form>
+	</body>
+</html>

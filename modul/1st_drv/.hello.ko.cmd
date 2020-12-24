@@ -1,0 +1,1 @@
+cmd_/home/george/Linux_4412/mydriver/2nd_drv/hello_drv/hello.ko := arm-none-linux-gnueabi-ld -EL -r  -T /home/george/Linux_4412/kernel/linux-3.14/scripts/module-common.lds --build-id  -o /home/george/Linux_4412/mydriver/2nd_drv/hello_drv/hello.ko /home/george/Linux_4412/mydriver/2nd_drv/hello_drv/hello.o /home/george/Linux_4412/mydriver/2nd_drv/hello_drv/hello.mod.o

@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/虚拟机共享文件夹/modul/2st_drv/hello.ko := arm-none-linux-gnueabi-ld -EL -r  -T /home/linux/linux-3.14-fs4412/scripts/module-common.lds --build-id  -o /mnt/hgfs/虚拟机共享文件夹/modul/2st_drv/hello.ko /mnt/hgfs/虚拟机共享文件夹/modul/2st_drv/hello.o /mnt/hgfs/虚拟机共享文件夹/modul/2st_drv/hello.mod.o

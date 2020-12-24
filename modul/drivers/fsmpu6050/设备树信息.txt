@@ -1,0 +1,19 @@
+	
+	
+	
+	/*　mpu6050六轴传感器　*/
+	i2c@138B0000 {
+	/*	#address-cells = <1>;
+		#size-cells = <0>;
+		samsung,i2c-sda-delay = <100>;
+		samsung,i2c-max-bus-freq = <20000>;*/
+
+		pinctrl-0 = <&i2c5_bus>;
+		pinctrl-names = "default";
+		status = "okay";
+		
+		mpu6050@0x68{
+			compatible = "invensense,mpu6050";
+			reg = <0x68>;
+		};
+	};

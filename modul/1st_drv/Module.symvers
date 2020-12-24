@@ -1,0 +1,2 @@
+0x00000000	my_sub	/home/george/Linux_4412/mydriver/2nd_drv/hello_drv/math	EXPORT_SYMBOL
+0x00000000	my_add	/home/george/Linux_4412/mydriver/2nd_drv/hello_drv/math	EXPORT_SYMBOL

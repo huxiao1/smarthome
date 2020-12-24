@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>硬件控制 Control</title>
+		<style type="text/css">
+			.main {
+				float: none;
+				height: 424px;
+				width: 424px;
+				background-image: url();
+				background-repeat: no-repeat;
+			}
+			
+			.strip {
+				height: 28px;
+				width: 200px;
+				margin-top: 55px;
+				margin-bottom: 30px;
+				margin-left: 100px;
+			}
+			
+			.strip1 {
+				height: 28px;
+				width: auto;
+				float: inherit;
+			}
+			
+			.strip2 {
+				height: 30px;
+				width: 275px;
+				margin-top: 30px;
+				margin-bottom: 30px;
+				margin-left: 100px;
+			}
+			
+			.strip3 {
+				height: 60px;
+				width: 250px;
+				margin-top: 30px;
+				margin-bottom: 30px;
+				margin-left: 100px;
+			}
+			
+			.clear {
+				clear: both;
+				height: 0;
+				font-size: 1px;
+				line-height: 0px;
+			}
+			
+			.demo {
+    position: relative;
+    left: 360px;
+    top: 10px;
+			}
+		</style>
+	</head>
+
+	<body background="./images/huaqing00.jpg">
+
+		<table width="600" border="2" height="317" align="center" background="./images/fs4412.jpg">
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+
+		<table width="600" height="50" border="2" align="center">
+			<tr>
+				<td width="294">
+					<div align="center">硬件控制</div>
+				</td>
+				<td width="296">
+					<div align="center">
+						<a href="home1.html">回主页</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<table width="400" height="270" align="center" border="3" bordercolor="red">
+			<td height="60">
+				<div align="center">
+					<form id="form1" name="form1" method="post" action="cgi-bin/a9_led.cgi">
+						<div class="strip1">
+							<input type="hidden" name="store" id="hiddenField" value="1" /> Led:
+							<label>
+                <input type="radio" name="led" value="1" id="led_0" />
+                on</label>
+
+							<label>
+                <input type="radio" name="led" value="0" id="led_1" />
+                off</label>
+							<input type="submit" name="button" id="button" value="确定" />
+						</div>
+					</form>
+				</div>
+			</td>
+			</tr>
+			<tr>
+				<td height="60">
+					<div align="center">
+						<form id="form4" name="form4" method="post" action="cgi-bin/a9_beep.cgi"> <input type="hidden" name="store" id="hiddenField" value="1" />
+
+							<label>Beep:
+              <input type="radio" name="beep" value="1" id="beep_0" />
+              开</label>
+
+							<label>
+              <input type="radio" name="beep" value="0" id="beep_1" />
+              关</label>
+
+							<input type="submit" name="button4" id="button4" value="提交" />
+						</form>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td height="60">
+					<div align="center">
+						<form id="form3" name="form3" method="post" action="cgi-bin/a9_seg.cgi">
+							<div class="strip1"> <input type="hidden" name="store" id="hiddenField" value="1" />
+
+								<label>Seg:
+                <input type="radio" name="seg" value="1" id="seg_0" />
+              on</label>
+
+								<label>
+                <input type="radio" name="seg" value="0" id="seg_1" />
+                off</label>
+
+								<input type="text" name="segvalue" id="textfield" size="2" />
+								<input type="submit" name="button3" id="button3" value="提交" />
+							</div>
+						</form>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td height="60">
+					<div align="center">
+						<form id="form2" name="form2" method="post" action="cgi-bin/zigbee_fan.cgi">
+							<div class="strip1"> <input type="hidden" name="store" id="hiddenField" value="1" /> Fan:
+
+								<label>
+                <input type="radio" name="fan" value="0" id="fan_0" />
+                off</label>
+
+								<label>
+                <input type="radio" name="fan" value="1" id="fan_1" />
+                1</label>
+
+								<label>
+                <input type="radio" name="fan" value="2" id="fan_2" />
+                2</label>
+
+								<label>
+                <input type="radio" name="fan" value="3" id="fan_3" />
+                3</label>
+
+								<input type="submit" name="button2" id="button2" value="确定" />
+							</div>
+						</form>
+					</div>
+				</td>
+			</tr>
+		</table>
+		
+		<tr>
+				<td>
+					<form>
+					<div class="demo" align="left">我国安防行业在经过了近30年的发展后，已经形成了长三角、珠三角、环渤海三大产业聚集区，<br/>
+						并且诞生了以海康威视、大华股份、宇视科技为首的第一阵营，前三强市场份额加起来占比达到50%以上，<br/>
+						产业集成度较高。每个月光是从杭州生产出来的安防摄像机都高达百万台，市场竞争激烈。
+						<br/>
+						<br/> 
+						</form>
+					</div>
+				</td>
+			</tr>
+
+	</body>
+
+</html>

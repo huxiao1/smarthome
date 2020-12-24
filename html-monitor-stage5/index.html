@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>登录界面</title>
+	</head>
+
+	<body>
+
+		<body background="./images/huaqing002.jpg">
+			<div align="center">
+				<table width="900" border="0" background="./images/huaqing3.jpg">
+					<tr>
+						<th width="385" height="80" scope="col">&nbsp;</th>
+						<th width="385" scope="col">&nbsp;</th>
+						<th width="70" scope="col">&nbsp;</th>
+					</tr>
+					<tr>
+						<td height="50">&nbsp;</td>
+						<td>
+							<div align="center"></div>
+						</td>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+			</div>
+			<div></div>
+			<div align="center">
+				<table width="900" border="0">
+					<tr>
+						<td>
+							<form onsubmit="return isValidate(myform)" action="cgi-bin/login.cgi" method="post">
+								用户名: <input type="text" name="username" id="username"> 密码: <input type="password" name="userpass" id="userpass">
+								<input type="submit" value="登录" id="button">
+							</form>
+
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<!--<p>&nbsp;</p>-->
+
+			<div align="center">
+				<table width="900" height="467" border="0" background="./images/huaqing4.jpg">
+					<tr>
+						<td width="126" height="248">&nbsp;</td>
+						<td width="351"></td>
+						<td width="101">&nbsp;</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>
+							<form name="myform" method="get" action="cgi-bin/login.cgi" onsubmit="return isValidate(myform)"></form>
+						</td>
+					</tr>
+			</div>
+		</body>
+
+</html>

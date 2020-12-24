@@ -1,0 +1,2 @@
+/mnt/hgfs/虚拟机共享文件夹/modul/9th_drv/mpu6050_i2c_drv.ko
+/mnt/hgfs/虚拟机共享文件夹/modul/9th_drv/mpu6050_i2c_drv.o

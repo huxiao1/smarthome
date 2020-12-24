@@ -1,0 +1,2 @@
+/mnt/hgfs/虚拟机共享文件夹/modul/simple_input_drv/simple_input.ko
+/mnt/hgfs/虚拟机共享文件夹/modul/simple_input_drv/simple_input.o
